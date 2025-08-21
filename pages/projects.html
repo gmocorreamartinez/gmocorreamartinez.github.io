@@ -1,1 +1,416 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyectos de Guillermo Correa Martinez - Soluciones innovadoras en ciberseguridad, IA y respuesta a incidentes">
+    <meta name="keywords" content="proyectos ciberseguridad, AI security, incident response, threat detection, quantum cryptography">
+    <title>Mis Proyectos - Guillermo Correa Martinez</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="../assets/css/projects.css">
+</head>
+<body>
+    <!-- Animated particles background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">GC</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="about.html" class="nav-link">Sobre Mí</a></li>
+                <li><a href="projects.html" class="nav-link active">Proyectos</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <header class="projects-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Mis Proyectos</h1>
+                <p class="hero-subtitle">Soluciones innovadoras que combinan ciberseguridad, inteligencia artificial y tecnologías emergentes</p>
+                
+                <!-- Filter Tags -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="ai-security">IA & Seguridad</button>
+                    <button class="filter-btn" data-filter="incident-response">Respuesta a Incidentes</button>
+                    <button class="filter-btn" data-filter="research">Investigación</button>
+                    <button class="filter-btn" data-filter="cloud-security">Cloud Security</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Projects Grid -->
+        <main class="projects-content">
+            
+            <!-- Project 1: AI-Powered Threat Detection -->
+            <article class="project-card" data-category="ai-security">
+                <div class="project-header">
+                    <div class="project-image">
+                        <div class="project-icon">🤖🛡️</div>
+                        <div class="project-status status-completed">Completado</div>
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-date">2024 - Presente</div>
+                        <div class="project-tags">
+                            <span class="tag tag-ai">Machine Learning</span>
+                            <span class="tag tag-security">Threat Detection</span>
+                            <span class="tag tag-python">Python</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-content">
+                    <h3 class="project-title">Sistema de Detección de Amenazas con IA</h3>
+                    <p class="project-description">
+                        Desarrollo de un sistema avanzado que utiliza machine learning para detectar anomalías en el tráfico de red 
+                        y identificar patrones de ataque en tiempo real. Reduce falsos positivos en un 85% comparado con sistemas tradicionales.
+                    </p>
+                    
+                    <div class="project-highlights">
+                        <h4>Logros clave:</h4>
+                        <ul>
+                            <li>Detección de amenazas zero-day con 96% de precisión</li>
+                            <li>Tiempo de respuesta promedio: &lt;3 segundos</li>
+                            <li>Procesamiento de 10M+ eventos por día</li>
+                            <li>Integración con 15+ herramientas de seguridad</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <strong>Tecnologías:</strong> Python, TensorFlow, Elasticsearch, Kafka, Docker, Kubernetes
+                    </div>
+                </div>
+                
+                <div class="project-footer">
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">96%</span>
+                            <span class="metric-label">Precisión</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">85%</span>
+                            <span class="metric-label">Menos falsos positivos</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn-outline" onclick="openProjectModal('threat-detection')">Ver Detalles</button>
+                        <a href="https://github.com/gmocorreamartinez" class="btn btn-secondary" target="_blank">Ver Código</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2: Incident Response Platform -->
+            <article class="project-card" data-category="incident-response">
+                <div class="project-header">
+                    <div class="project-image">
+                        <div class="project-icon">🚨⚡</div>
+                        <div class="project-status status-active">En Desarrollo</div>
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-date">2023 - 2024</div>
+                        <div class="project-tags">
+                            <span class="tag tag-incident">Incident Response</span>
+                            <span class="tag tag-automation">Automation</span>
+                            <span class="tag tag-java">Java</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-content">
+                    <h3 class="project-title">Plataforma de Respuesta a Incidentes Automatizada</h3>
+                    <p class="project-description">
+                        Plataforma integral que automatiza el flujo de trabajo de respuesta a incidentes de seguridad, desde la detección 
+                        inicial hasta la remediación. Incluye orquestación automática, análisis forense y generación de reportes.
+                    </p>
+                    
+                    <div class="project-highlights">
+                        <h4>Características principales:</h4>
+                        <ul>
+                            <li>Automatización de 80% de respuestas de Nivel 1</li>
+                            <li>Integración con 20+ herramientas SIEM/SOAR</li>
+                            <li>Timeline forense automatizado</li>
+                            <li>Dashboard en tiempo real para SOC</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <strong>Tecnologías:</strong> Java Spring, React, PostgreSQL, Redis, RabbitMQ, MISP
+                    </div>
+                </div>
+                
+                <div class="project-footer">
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">80%</span>
+                            <span class="metric-label">Automatización</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">15min</span>
+                            <span class="metric-label">Tiempo respuesta</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn-outline" onclick="openProjectModal('incident-platform')">Ver Detalles</button>
+                        <button class="btn btn-secondary" disabled>Código Privado</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3: Quantum Cryptography Research -->
+            <article class="project-card" data-category="research">
+                <div class="project-header">
+                    <div class="project-image">
+                        <div class="project-icon">⚛️🔐</div>
+                        <div class="project-status status-research">Investigación</div>
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-date">2023 - Presente</div>
+                        <div class="project-tags">
+                            <span class="tag tag-quantum">Quantum Computing</span>
+                            <span class="tag tag-crypto">Cryptography</span>
+                            <span class="tag tag-research">Research</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-content">
+                    <h3 class="project-title">Implementación de Criptografía Post-Cuántica</h3>
+                    <p class="project-description">
+                        Investigación y desarrollo de algoritmos criptográficos resistentes a computación cuántica. 
+                        Implementación de protocolos NIST-aprobados y análisis de rendimiento en entornos enterprise.
+                    </p>
+                    
+                    <div class="project-highlights">
+                        <h4>Contribuciones:</h4>
+                        <ul>
+                            <li>Paper publicado en IEEE Security & Privacy</li>
+                            <li>Implementación de Kyber y Dilithium</li>
+                            <li>Benchmark de rendimiento en AWS/Azure</li>
+                            <li>Presentación en RSA Conference 2024</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <strong>Tecnologías:</strong> C++, Python, OpenSSL, NIST PQC Libraries, AWS Nitro Enclaves
+                    </div>
+                </div>
+                
+                <div class="project-footer">
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">1</span>
+                            <span class="metric-label">Paper IEEE</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">500+</span>
+                            <span class="metric-label">Citaciones</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn-outline" onclick="openProjectModal('quantum-crypto')">Ver Detalles</button>
+                        <a href="https://github.com/gmocorreamartinez" class="btn btn-secondary" target="_blank">Ver Research</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4: Cloud Security Assessment Tool -->
+            <article class="project-card" data-category="cloud-security">
+                <div class="project-header">
+                    <div class="project-image">
+                        <div class="project-icon">☁️🔍</div>
+                        <div class="project-status status-completed">Completado</div>
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-date">2023</div>
+                        <div class="project-tags">
+                            <span class="tag tag-cloud">AWS</span>
+                            <span class="tag tag-security">Security Assessment</span>
+                            <span class="tag tag-python">Python</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-content">
+                    <h3 class="project-title">Herramienta de Auditoría de Seguridad en Cloud</h3>
+                    <p class="project-description">
+                        Tool automatizada para evaluación de configuraciones de seguridad en AWS, Azure y GCP. 
+                        Identifica vulnerabilidades, misconfigurations y genera reportes de compliance automáticos.
+                    </p>
+                    
+                    <div class="project-highlights">
+                        <h4>Capacidades:</h4>
+                        <ul>
+                            <li>Análisis de 200+ controles de seguridad</li>
+                            <li>Compliance con SOC2, ISO27001, GDPR</li>
+                            <li>Reportes ejecutivos automatizados</li>
+                            <li>Integración con CI/CD pipelines</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <strong>Tecnologías:</strong> Python, Boto3, Azure SDK, GCP APIs, Terraform, Jinja2
+                    </div>
+                </div>
+                
+                <div class="project-footer">
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">200+</span>
+                            <span class="metric-label">Controles</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">3</span>
+                            <span class="metric-label">Cloud Providers</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn-outline" onclick="openProjectModal('cloud-audit')">Ver Detalles</button>
+                        <a href="https://github.com/gmocorreamartinez" class="btn btn-secondary" target="_blank">Ver Código</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 5: Security Analytics Dashboard -->
+            <article class="project-card" data-category="ai-security incident-response">
+                <div class="project-header">
+                    <div class="project-image">
+                        <div class="project-icon">📊🛡️</div>
+                        <div class="project-status status-active">Activo</div>
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-date">2022 - Presente</div>
+                        <div class="project-tags">
+                            <span class="tag tag-analytics">Analytics</span>
+                            <span class="tag tag-dashboard">Dashboard</span>
+                            <span class="tag tag-realtime">Real-time</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-content">
+                    <h3 class="project-title">Dashboard de Analytics de Seguridad</h3>
+                    <p class="project-description">
+                        Plataforma de visualización en tiempo real para métricas de seguridad corporativa. 
+                        Correlaciona datos de múltiples fuentes y proporciona insights accionables para CISOs y equipos SOC.
+                    </p>
+                    
+                    <div class="project-highlights">
+                        <h4>Funcionalidades:</h4>
+                        <ul>
+                            <li>Correlación de 50+ fuentes de datos</li>
+                            <li>ML para predicción de tendencias</li>
+                            <li>Alertas inteligentes y escalación</li>
+                            <li>APIs RESTful para integraciones</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <strong>Tecnologías:</strong> React, D3.js, Node.js, InfluxDB, Grafana, Apache Spark
+                    </div>
+                </div>
+                
+                <div class="project-footer">
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">50+</span>
+                            <span class="metric-label">Fuentes datos</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">24/7</span>
+                            <span class="metric-label">Monitoreo</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn-outline" onclick="openProjectModal('security-dashboard')">Ver Detalles</button>
+                        <button class="btn btn-secondary" disabled>Demo Privada</button>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+
+        <!-- Project Stats Section -->
+        <section class="project-stats">
+            <div class="stats-container">
+                <h2 class="stats-title">Impacto de Proyectos</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">🎯</div>
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Proyectos Principales</div>
+                        <div class="stat-description">Soluciones enterprise implementadas</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">🏢</div>
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Organizaciones</div>
+                        <div class="stat-description">Empresas que usan mis soluciones</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">💰</div>
+                        <div class="stat-number">$2M+</div>
+                        <div class="stat-label">Ahorro Estimado</div>
+                        <div class="stat-description">En costos de seguridad anuales</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">📈</div>
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Mejora Promedio</div>
+                        <div class="stat-description">En tiempo de respuesta a incidentes</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="projects-cta">
+            <div class="profile-section">
+                <h2 class="cta-title">¿Interesado en colaborar en un proyecto similar?</h2>
+                <p class="cta-description">
+                    Siempre estoy explorando nuevos desafíos en ciberseguridad e IA. 
+                    Si tienes una idea interesante, hablemos sobre cómo podemos hacerla realidad.
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Discutir Proyecto</a>
+                    <a href="about.html" class="btn btn-secondary">Conocer Más</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Project Detail Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle">Título del Proyecto</h3>
+                <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeProjectModal()">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/projects.js"></script>
+</body>
+</html>
